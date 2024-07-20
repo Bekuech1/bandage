@@ -180,3 +180,7 @@ img{
 .notVisible{
   visibility: hidden;
 }
+
+.nothing{
+  visibility: collapse;
+}
