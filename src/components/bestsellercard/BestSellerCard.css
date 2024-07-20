@@ -1,0 +1,41 @@
+.bestsellercard img{
+    width: 183px;
+    height: 238px;   
+}
+
+.bestseller-cardtext{
+    width: fit-content;
+    padding: 25px 25px 35px 25px;
+    gap: 10px;   
+    background-color: #ffffff;
+}
+
+.bestseller-cardtext span{
+    color: #2DC071;
+}
+
+.bestsellercard-alt{
+    width: 238px;
+    height: fit-content;
+}
+
+.bestsellercard-alt img{
+    width: 239px;
+    height: 280px;    
+}
+
+.bestseller-cardtext-alt{
+    width: 188px;
+    height: fit-content;
+    padding: 25px 25px 35px 25px;
+    gap: 10px;
+    background-color: #ffffff;
+}
+
+.bestseller-cardtext-alt span{
+    color: #2DC071;
+}
+
+.bestseller-cardtext-alt h5, .bestseller-cardtext-alt a{
+    text-align: left;
+}

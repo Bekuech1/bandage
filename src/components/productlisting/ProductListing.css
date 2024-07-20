@@ -1,0 +1,18 @@
+.product-listing{
+    width: 1076px;
+    margin-right: auto;
+    margin-left: 8%;
+    height: fit-content;
+    padding: 48px 24px 48px 24px;
+    gap: 24px;
+}
+
+#listing-line{
+    width: 100%;
+    border: 1px solid #ECECEC;    
+}
+
+.listing-row{
+    width: 100%;
+    height: fit-content;
+}

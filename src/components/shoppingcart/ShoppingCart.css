@@ -1,0 +1,155 @@
+.shopping-cart{
+    width: fit-content;
+    height: fit-content;
+    gap: 56px;
+}
+
+
+.cart{
+    background-color: #ffffff;
+    gap: 24px;
+    padding: 32px;
+    height: fit-content;
+}
+
+.cart-items-top{
+    padding: 16px 24px 17px 24px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #3B4148;
+    box-shadow: 0px 11px 40px -17px #00000024;  
+}
+
+#cart-item-top1{
+    width: 70px;
+    margin-left: 183px;
+}
+
+#cart-item-top2{
+    width: 45px;
+    margin-left: 114px; 
+}
+
+.order-summary{
+    background-color: #ffffff;
+    height: fit-content;
+    gap: 32px;
+    padding: 32px;
+}
+
+.order-summary1{
+    width: 383px;
+    height: fit-content;
+}
+
+.order-summary2{
+    width: 389px;
+    height: fit-content;   
+}
+
+.order-summary2 p{
+    width: 115px;
+    text-align: right;
+}
+
+.order-summary-line{
+    width: 389px;
+    height: 0px;
+    border: 1px solid #dcdcdc;
+}
+
+.order-summary3{
+    width: 382.76px;
+    height: fit-content;
+}
+
+.order-summary4{
+    width: 389px;
+    height: fit-content;   
+    align-items: end;
+    border-top: 2.5px solid #dcdcdc;
+}
+
+.order-summary4 p{
+    width: 95px;
+    text-align: right;
+    margin-left: auto;
+}
+
+.order-summary5{
+    width: 389px;
+    height: fit-content;
+    gap: 32px;    
+}
+
+.order-summary5 section{
+    gap: 24px;
+}
+
+.maincart{
+    width: 566px;
+    height: fit-content    
+}
+
+.cart-container{
+    gap: 20px;
+    margin: 24px 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.maincart1{
+    width: fit-content;
+    height: fit-content;
+    gap: 6px;    
+}
+
+.cart-img{
+    width: 100px;
+    height: 75px;    
+}
+
+.maincart1-1{
+    width: fit-content;
+    height: fit-content;
+    gap: 6px;    
+}
+
+.maincart2{
+    width: fit-content;
+    height: fit-content;
+    gap: 16px;    
+}
+
+.cart-button1{
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    border-radius: 50%;  
+    border: none; 
+    background-color: #E8EAEC; 
+    color: #3B4148;
+}
+
+.cart-button2{
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    border-radius: 50%;  
+    border: none; 
+    background-color: #23A6F0;
+    color: #ffffff;   
+}
+
+.maincart3{
+    width: fit-content;
+    height: fit-content;
+    gap: 1px; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.remove-btn{
+    width: fit-content;
+    height: fit-content;
+    gap: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,94 @@
+.shopproduct{
+    padding: 0px 0px 48px 0px;
+    gap: 30px;
+    width: fit-content;
+}
+
+.shop-left{
+    gap: 30px;
+}
+
+.carousel-img1{
+    width: 24px;
+    height: 44.47px;
+    top: 258.53px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.carousel-img2{
+    width: 24px;
+    height: 44.47px;
+    top: 259px;
+    left: 447px;
+    cursor: pointer;
+}
+
+.carousel-indicator{
+    width: fit-content;
+    gap: 19px;
+}
+
+.shop-right{
+    padding: 30.5px;
+    height: fit-content;
+    gap: 20px;
+}
+
+.shop-right p, .shop-right h4, .shop-right h3, .shop-right section{
+    width: fit-content;
+}
+
+#shop-product-txt{
+    width: 440px;
+}
+
+.star-row{
+    width: fit-content;
+    height: fit-content;
+    gap: 10px;
+}
+
+.star-row div{
+    display: contents;
+    gap: 5px;
+}
+
+.line{
+    width: 445px;
+    height: 0px;
+    border: 1px solid #bdbdbd;
+}
+
+.shop-colors{
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.shop-colors div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#color1{
+    background: #23A6F0;
+}
+#color2{
+    background:#2DC071;
+}
+#color3{
+    background: #E77C40;
+}
+#color4{
+    background: #252B42;
+}
+
+.shop-buttons{
+    gap: 10px;
+}
+
+
+
+

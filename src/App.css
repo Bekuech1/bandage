@@ -1,0 +1,182 @@
+body{
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.gridFlex{
+  display: flex;
+}
+
+.auto{
+  margin: auto;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.spaceBetween{
+  justify-content: space-between;
+}
+
+.justifyCenter{
+  justify-self: center;
+}
+
+.alignCenter{
+  align-self: center;
+}
+
+.fix{
+  border: 1px solid red;
+}
+
+.noDeco{
+  text-decoration: none;
+  color: inherit;
+}
+
+.centerText{
+  text-align: center;
+}
+
+.noMargin{
+  margin: 0;
+}
+
+.noPadding{
+  padding: 0;
+}
+
+.sText{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.pText{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;  
+}
+
+.h3Text{
+font-size: 24px;
+font-weight: 700;
+}
+
+.h4Text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.h5Text{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.h6Text{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.green{
+  color:#2DC071;
+}
+
+.blue{
+  color: #252B42;
+}
+
+.grey{
+  color: #737373;
+}
+
+.feint{
+  color: #BDBDBD;
+}
+
+.sky{
+  color: #23A6F0;
+}
+
+.red{
+  color: #F56666;
+}
+
+.white{
+  color: #FFFFFF
+}
+
+.capitalButton{
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.transparentButton{
+  border: 1px solid #23A6F0;
+  background-color: transparent;
+  color: #23A6F0;
+}
+
+.filledButton{
+  border: 1px solid #23A6F0;
+  background-color: #23A6F0;
+  color: #ffffff;
+}
+
+.normalButton{
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  text-transform: capitalize;
+}
+
+.circleButton{
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #E8E8E8;   
+  background-color: #ffffff;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  background-repeat: no-repeat;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.greyBackground{
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.notVisible{
+  visibility: hidden;
+}

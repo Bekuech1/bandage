@@ -1,0 +1,23 @@
+.cta{
+    width: 100%;
+    background-image: url(cta.jpg);   
+}
+
+.cta-body{
+    width: 1050px;
+    padding: 160px 0px 112px 0px;
+    gap: 36px;  
+    background-color: transparent;  
+    text-align: center;
+    justify-content: center;
+}
+
+.cta-body h2{
+    font-size: 40px;
+    width: 571px;
+}
+
+.cta-body p{
+    width: 447px;
+    justify-self: center;
+}

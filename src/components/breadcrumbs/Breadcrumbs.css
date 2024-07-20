@@ -1,0 +1,15 @@
+.breadcrumbs{
+    width: 100%;
+    padding: 24px 0px;
+    background-color: #fafafa;    
+}
+
+.breadcrumbs-inner{
+    width: 990px;
+}
+
+.breadcrumbs-main{
+    width: 509px;
+    align-items: center;
+    gap: 15px;
+}

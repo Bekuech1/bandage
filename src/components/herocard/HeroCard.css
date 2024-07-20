@@ -1,0 +1,31 @@
+.hero1{
+    background-image: url(hero1.png);
+    width: 452px;
+    height: 616px; 
+}
+
+.hero1 div{
+    padding: 24px;
+    gap: 5px;
+}
+
+.hero2{
+    background-image: url(hero2.png);
+    width: 679px;
+    height: 300px; 
+}
+
+.hero3{
+    background-image: url(hero3.png);
+    width: 332px;
+    height: 300px;    
+}
+
+.hero4{
+    background-image: url(hero4.png);
+    width: 332px;
+    height: 300px;    
+}
+
+
+

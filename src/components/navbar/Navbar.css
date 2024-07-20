@@ -1,0 +1,72 @@
+nav{
+    height: 58px;
+    padding: 0px 17px 0px 38px;
+}
+
+.nav-alt{
+    margin: auto;
+    width: fit-content;
+    padding: 0;
+}
+
+.logo h3{
+    padding: 13px 79px 13px 0px;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252B42;
+}
+
+nav li{
+    gap: 15px;
+}
+
+nav ul{
+    text-decoration: none;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #737373;
+}
+
+#dropdown-nav{
+    font-size: 14px;
+    font-weight: 500;
+    color: #252B42;
+    gap: 10px;
+}
+
+.nav-right{
+    width: 1155px;
+}
+
+.nav-right-alt{
+    width: 815px;
+}
+
+
+#profile{
+    font-size: 14px;
+    font-weight: 700;
+    color: #23A6F0; 
+    padding: 15px;
+    gap: 5px;
+    
+}
+
+#search{
+    padding: 15px;
+    gap: 5px;
+}
+
+#cart{
+    padding: 15px;
+    gap: 5px;
+    color: #23A6F0;
+}
+
+#heart{
+    padding: 15px;
+    gap: 5px;
+    color: #23A6F0;
+}
