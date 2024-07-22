@@ -12,17 +12,17 @@ const BestSeller = () => {
         <section className='bestseller-row auto grid'>
             <div className='gridFlex spaceBetween'>
                 <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard/>
-                <BestSellerCard/>
-                <BestSellerCard/>
-                <BestSellerCard/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
             </div>
             <div className='gridFlex spaceBetween'>
-                <BestSellerCard/>
-                <BestSellerCard/>
-                <BestSellerCard/>
-                <BestSellerCard/>
-                <BestSellerCard/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
             </div>
             <button className='uppercase capitalButton auto transparentButton'>load more products</button>
         </section>

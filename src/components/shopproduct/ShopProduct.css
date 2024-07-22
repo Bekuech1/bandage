@@ -29,6 +29,11 @@
     gap: 19px;
 }
 
+.carousel-indicator img{
+    width: 100px;
+    height: 75px;
+}
+
 .shop-right{
     padding: 30.5px;
     height: fit-content;
