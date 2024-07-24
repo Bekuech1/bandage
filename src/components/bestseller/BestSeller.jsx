@@ -2,8 +2,15 @@ import React from 'react'
 import './BestSeller.css'
 import BestSellerCard from '../bestsellercard/BestSellerCard'
 import ComponentHeading from '../ComponentHeading'
+import { Link } from 'react-router-dom'
+import products from '../../products.json'
+
+
 
 const BestSeller = () => {
+  const recentProducts1 = products.slice(0, 5);
+  const recentProducts2 = products.slice(6, 11);
+
   return (
     <section className='grid bestseller auto'>
         <div className='grid bestseller-text auto centerText' >
@@ -11,18 +18,14 @@ const BestSeller = () => {
         </div>
         <section className='bestseller-row auto grid'>
             <div className='gridFlex spaceBetween'>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                {recentProducts1.map((item) => (
+                    <BestSellerCard key={item.id} item={item} classes='bestsellercard' cardText='bestseller-cardtext'/>
+                ))}
             </div>
             <div className='gridFlex spaceBetween'>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
-                <BestSellerCard classes='bestsellercard' cardText='bestseller-cardtext'/>
+                {recentProducts2.map((item) => (
+                    <BestSellerCard key={item.id} item={item} classes='bestsellercard' cardText='bestseller-cardtext'/>
+                ))}
             </div>
             <button className='uppercase capitalButton auto transparentButton'>load more products</button>
         </section>

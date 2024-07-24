@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -14,42 +14,42 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
             <section className='alignCenter'>
                 <li className='flex'>
                     <ul className='capitalize '>
-                        <Link className='noDeco' to="/home">Home</Link>
+                        <NavLink className='noDeco' to="/home">Home</NavLink>
                     </ul>
                     <ul className='capitalize flex' id='dropdown-nav'>
-                        <Link className='noDeco' to="/shop">
+                        <NavLink className='noDeco' to="/shop">
                         shop
-                        </Link>
+                        </NavLink>
                         <img src="icons/expand.svg" alt="" />
                     </ul>
                     <ul className='capitalize'>
-                        <Link className='noDeco' to="/home">about</Link>
+                        <NavLink className='noDeco' to="/home">about</NavLink>
                     </ul>
                     <ul className='capitalize'>
-                        <Link className='noDeco' to="/home">blog</Link>
+                        <NavLink className='noDeco' to="/home">blog</NavLink>
                     </ul>
                     <ul className='capitalize'>
-                        <Link className='noDeco' to="/home">contact</Link>
+                        <NavLink className='noDeco' to="/home">contact</NavLink>
                     </ul>
                     <ul className='capitalize'>
-                        <Link className='noDeco' to="/home">pages</Link>
+                        <NavLink className='noDeco' to="/home">pages</NavLink>
                     </ul>
                 </li>
             </section>
             <section className='alignCenter'>
                 <li className='flex alignCenter'>
                     <ul id='profile' className='flex'>
-                        <Link className='noDeco capitalize' to="/home"><img className='auto' src="icons/profile.svg" alt="" /> login / register</Link>
+                        <NavLink className='noDeco capitalize' to="/home"><img className='auto' src="icons/profile.svg" alt="" /> login / register</NavLink>
                     </ul>
                     <ul id='search' className='flex'>
-                        <Link className='noDeco' to="/home"><img  className='alignCenter' src="icons/search.svg" alt="" /></Link>
+                        <NavLink className='noDeco' to="/home"><img  className='alignCenter' src="icons/search.svg" alt="" /></NavLink>
                     </ul>
                     <ul id='cart' className='flex'>
-                        <Link className='noDeco' to="/cart"><img src="icons/cart.svg" alt="" /></Link>
+                        <NavLink className='noDeco' to="/cart"><img src="icons/cart.svg" alt="" /></NavLink>
                         1
                     </ul>
                     <ul id='heart' className='flex'>
-                        <Link className='noDeco' to="/home"><img  className='alignCenter' src="icons/heart.svg" alt="" /></Link>
+                        <NavLink className='noDeco' to="/home"><img  className='alignCenter' src="icons/heart.svg" alt="" /></NavLink>
                         1
                     </ul>
                 </li>

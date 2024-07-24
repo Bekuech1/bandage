@@ -42,7 +42,7 @@ const ShoppingCart = () => {
               </div>
               <div className='order-summary-line'></div>
               <div className='order-summary3 flex spaceBetween'>
-                <h4 className='noMargin blue h4Text capitalize'>subtotal</h4>
+                <h4 className='noMargin blue h4Text capitalize'>total</h4>
                 <h4 className='noMargin blue h4Text capitalize'>$67,454</h4>
               </div>
               <div className='order-summary4'>

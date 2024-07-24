@@ -10,6 +10,10 @@
     background-color: #ffffff;
 }
 
+.bestseller-cardtext h5{
+    max-width: 133px;
+}
+
 .bestseller-cardtext span{
     color: #2DC071;
 }
@@ -21,7 +25,8 @@
 
 .bestsellercard-alt img{
     width: 239px;
-    height: 280px;    
+    height: 280px; 
+    background-color: #ffffff;   
 }
 
 .bestseller-cardtext-alt{
@@ -30,6 +35,10 @@
     padding: 25px 25px 35px 25px;
     gap: 10px;
     background-color: #ffffff;
+}
+
+.bestseller-cardtext-alt h5{
+    width: 188px;
 }
 
 .bestseller-cardtext-alt span{
