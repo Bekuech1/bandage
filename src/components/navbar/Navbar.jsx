@@ -6,7 +6,9 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = ( { navClass, navMarginAuto } ) => {
   return (
-    <nav className={`flex ${navMarginAuto}`}>
+    <>
+    
+    <nav className={`main-nav flex ${navMarginAuto}`} id='main-nav'>
         <section className='logo alignCenter'>
             <h3 className='capitalize logo'>bandage</h3>
         </section>
@@ -56,6 +58,53 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
             </section>
         </section>
     </nav>
+
+    {/* MOBILE NAV */}
+    <nav className='mobile-nav'>
+        <div className='mobile-nav1 flex auto spaceBetween'>
+            <div className='mobile-nav1-1'>
+                <h3 className='noMargin blue capitalize mobile-logo'>bandage</h3>
+            </div>
+            <section className='flex mobile-nav1-2'>
+                <img  className='auto' src="icons/mobile-search.svg" alt="" />
+                <img  className='auto' src="icons/mobile-cart.svg" alt="" />
+                <img  className='auto' src="icons/mobile-menu.svg" alt="" />
+            </section>
+        </div>
+        <section className='grid auto nav-lists'>
+            <ul className='grid nav-lists1 noMargin'>
+                <li className='grey'>home</li>
+                <li className='grey'>product</li>
+                <li className='grey'>pricing</li>
+                <li className='grey'>contact</li>
+            </ul>
+            <ul className='grid nav-lists2 noMargin'>
+                <li className='blue'>home</li>
+                <li className='blue'>shop</li>
+                <li className='blue'>about</li>
+                <li className='blue'>blog</li>
+                <li className='blue'>contact</li>
+                <li className='blue'>pages</li>
+            </ul>
+            <ul className='grid nav-lists3'>
+                <li className='sky'>
+                    <img src="icons/profile.svg" alt="" className='auto'/> login/register
+                </li>
+                <li className='sky'>
+                    <img src="icons/cart.svg" alt="" />
+                </li>
+                <li className='sky'>
+                    <img src="icons/search.svg" alt="" />
+                </li>
+                <li className='sky'>
+                    <img src="icons/heart.svg" alt="" />
+                </li>
+            </ul>
+        </section>
+    </nav>
+    
+
+    </>
   )
 }
 

@@ -1,4 +1,8 @@
-nav{
+.mobile-nav{
+    display: none;
+}
+
+.main-nav{
     height: 58px;
     padding: 0px 17px 0px 38px;
 }
@@ -17,11 +21,11 @@ nav{
     color: #252B42;
 }
 
-nav li{
+.main-nav li{
     gap: 15px;
 }
 
-nav ul{
+.main-nav ul{
     text-decoration: none;
     padding: 0;
     font-size: 14px;
@@ -70,3 +74,73 @@ nav ul{
     gap: 5px;
     color: #23A6F0;
 }
+
+/* MOBILE NAV */
+
+@media only screen and (max-width:867px) {
+    #main-nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        display: grid;
+    }
+
+    .mobile-nav1{
+        width: 80%;
+    }
+
+    .mobile-nav1-1{
+        padding: 13px 79px 13px 0px;
+    }
+
+    .mobile-logo{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.10000000149011612px;
+        text-align: left;
+    }
+
+    .mobile-nav1-2{
+        gap: 15px;
+    }
+
+    .mobile-nav1-2 img{
+        width: 24px;
+        height: 24px;  
+        cursor: pointer;      
+    }
+
+    .nav-lists{
+        width: fit-content;
+        height: fit-content;
+        padding: 50px 0;
+    }
+
+    .nav-lists ul{
+        gap: 30px;
+        padding: 0;
+        list-style: none;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .nav-lists2{
+        margin-bottom: 30px;
+    }
+
+    .nav-lists3 img{
+        width: 34px;
+        height: 24px;
+    }
+
+    li{
+        cursor: pointer;
+    }
+
+}
+

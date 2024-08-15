@@ -184,3 +184,17 @@ img{
 .nothing{
   visibility: collapse;
 }
+
+
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+  .notVisible{
+    visibility: hidden;
+  }
+
+  .gridFlex{
+    display: grid;
+  }
+}
