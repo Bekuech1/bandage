@@ -8,12 +8,9 @@ import ShoppingCart from '../components/shoppingcart/ShoppingCart'
 const Cart = () => {
   return (
     <>
-    <Navbar navClass='nav-right-alt' navMarginAuto='nav-alt' />
     <Breadcrumbs isShop={false}/>
     <ShoppingCart/>
     <ProductListing header='products related to items in your cart'/>
-    <Footer footerClass='footer-top-alt'/>
-
     </>
   )
 }

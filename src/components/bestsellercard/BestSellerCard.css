@@ -45,6 +45,7 @@
     color: #2DC071;
 }
 
-.bestseller-cardtext-alt h5, .bestseller-cardtext-alt a{
+.bestseller-cardtext-alt h5, .bestseller-cardtext-alt a, .bestseller-cardtext-alt div{
+    text-decoration: none;
     text-align: left;
 }

@@ -1,5 +1,8 @@
 import React from 'react'
 import './Footer.css'
+import facebook from '/icons/facebook.svg'
+import insta from '/icons/insta.svg'
+import twitter from '/icons/twitter.svg'
 
 const Footer = ( {footerClass} ) => {
   return (
@@ -8,9 +11,9 @@ const Footer = ( {footerClass} ) => {
             <section className='footer-top1 auto gridFlex'>
                 <h3 className='noMargin h3Text blue'>Bandage</h3>
                 <div className='top-links flex'>
-                    <a href=""><img src="icons/facebook.svg" alt="" /></a>
-                    <a href=""><img src="icons/insta.svg" alt="" /></a>
-                    <a href=""><img src="icons/twitter.svg" alt="" /></a>
+                    <a href=""><img src={facebook} alt="" /></a>
+                    <a href=""><img src={insta} alt="" /></a>
+                    <a href=""><img src={twitter} alt="" /></a>
                 </div>
             </section>
         </div>

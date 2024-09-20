@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ProductListing.css'
 import BestSellerCard from '../bestsellercard/BestSellerCard'
 import products from '../../products.json'
 
 const ProductListing = (prop) => {
+    // const [productList, setProductList] = 
+    // useState([]);
+
+    // useEffect(() => {
+    //     setProductList(products);
+    // }, []);
+
     const moreProducts1 = products.slice(0, 4);
     const moreProducts2 = products.slice(5, 9);
   return (
@@ -15,12 +22,22 @@ const ProductListing = (prop) => {
             <div id='listing-line'></div>
             <div className='listing-row flex auto spaceBetween'>
                 {moreProducts1.map((item) => (
-                    <BestSellerCard key={item.id} item={item}  classes='bestsellercard-alt' cardText='bestseller-cardtext-alt'/>
+                    <BestSellerCard 
+                        key={item.id} 
+                        item={item}  
+                        classes='bestsellercard-alt' 
+                        cardText='bestseller-cardtext-alt'
+                    />
                 ))}
             </div>
             <div className='listing-row flex auto spaceBetween'>
                 {moreProducts2.map((item) => (
-                    <BestSellerCard key={item.id} item={item}  classes='bestsellercard-alt' cardText='bestseller-cardtext-alt'/>
+                    <BestSellerCard 
+                        key={item.id} 
+                        item={item}  
+                        classes='bestsellercard-alt' 
+                        cardText='bestseller-cardtext-alt'
+                    />
                 ))}
             </div>
         </div>

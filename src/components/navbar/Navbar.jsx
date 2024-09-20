@@ -1,6 +1,11 @@
 import React from 'react'
 import './Navbar.css'
 import { NavLink } from 'react-router-dom';
+import expand from '/icons/expand.svg'
+import profile from '/icons/profile.svg'
+import navcart from '/icons/cart.svg'
+import navheart from '/icons/heart.svg'
+import search from '/icons/search.svg'
 
 
 
@@ -8,51 +13,117 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
   return (
     <>
     
-    <nav className={`main-nav flex ${navMarginAuto}`} id='main-nav'>
+    <nav className='main-nav flex'  id='main-nav'>
         <section className='logo alignCenter'>
-            <h3 className='capitalize logo'>bandage</h3>
+            <h3 className='capitalize logo'>
+                bandage
+            </h3>
         </section>
-        <section className={`flex spaceBetween ${navClass}`}>
+        <section className='nav-section flex spaceBetween'>
             <section className='alignCenter'>
                 <li className='flex'>
                     <ul className='capitalize '>
-                        <NavLink className='noDeco' to="/home">Home</NavLink>
-                    </ul>
-                    <ul className='capitalize flex' id='dropdown-nav'>
-                        <NavLink className='noDeco' to="/shop">
-                        shop
+                        <NavLink 
+                            className='noDeco' 
+                            to="/"
+                        >
+                            Home
                         </NavLink>
-                        <img src="icons/expand.svg" alt="" />
+                    </ul>
+                    <ul className='capitalize flex' >
+                        <NavLink 
+                            className='noDeco dropdown-nav' 
+                            to="/shop/:id"
+                        >
+                            shop
+                        </NavLink>
+                        <img src={expand} alt="" className='auto'/>
                     </ul>
                     <ul className='capitalize'>
-                        <NavLink className='noDeco' to="/home">about</NavLink>
+                        <NavLink 
+                            className='noDeco' 
+                            to="/"
+                    >
+                        about
+                    </NavLink>
                     </ul>
                     <ul className='capitalize'>
-                        <NavLink className='noDeco' to="/home">blog</NavLink>
+                        <NavLink 
+                            className='noDeco' 
+                            to="/"
+                        >
+                            blog
+                        </NavLink>
                     </ul>
                     <ul className='capitalize'>
-                        <NavLink className='noDeco' to="/home">contact</NavLink>
+                        <NavLink 
+                            className='noDeco' 
+                            to="/"
+                        >
+                            contact
+                        </NavLink>
                     </ul>
                     <ul className='capitalize'>
-                        <NavLink className='noDeco' to="/home">pages</NavLink>
+                        <NavLink 
+                            className='noDeco' 
+                            to="/"
+                        >
+                            pages
+                        </NavLink>
                     </ul>
                 </li>
             </section>
             <section className='alignCenter'>
                 <li className='flex alignCenter'>
-                    <ul id='profile' className='flex'>
-                        <NavLink className='noDeco capitalize' to="/home"><img className='auto' src="icons/profile.svg" alt="" /> login / register</NavLink>
+                    <ul className='flex'>
+                        <NavLink 
+                            className='noDeco capitalize profile nav-ul sky' 
+                            to="/"
+                        >
+                            <img 
+                                className='auto profile-img' 
+                                src={profile} 
+                                alt=""
+                            /> 
+                                login / register
+                        </NavLink>
                     </ul>
-                    <ul id='search' className='flex'>
-                        <NavLink className='noDeco' to="/home"><img  className='alignCenter' src="icons/search.svg" alt="" /></NavLink>
+                    <ul className='flex'>
+                        <NavLink 
+                            className='noDeco nav-ul' 
+                            to="/home"
+                        >
+                        <img  
+                            className='alignCenter' 
+                            src={search} 
+                            alt="" 
+                        />
+                        </NavLink>
                     </ul>
-                    <ul id='cart' className='flex'>
-                        <NavLink className='noDeco' to="/cart"><img src="icons/cart.svg" alt="" /></NavLink>
-                        1
+                    <ul className='flex'>
+                        <NavLink 
+                            className='noDeco  nav-ul' 
+                            to="/cart"
+                        >
+                        <img 
+                            src={navcart} 
+                            alt="" 
+                        />
+                        <p>1</p>
+                        </NavLink>
                     </ul>
-                    <ul id='heart' className='flex'>
-                        <NavLink className='noDeco' to="/home"><img  className='alignCenter' src="icons/heart.svg" alt="" /></NavLink>
-                        1
+                    <ul className='flex'>
+                        <NavLink 
+                            className='noDeco  nav-ul' 
+                            to="/"
+                        >
+                        <img  
+                            className='alignCenter' 
+                            src={navheart} 
+                            alt="" 
+                        />
+                        <p>liked count</p>
+                        </NavLink>
                     </ul>
                 </li>
             </section>

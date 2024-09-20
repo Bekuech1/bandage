@@ -5,20 +5,20 @@
 .main-nav{
     height: 58px;
     padding: 0px 17px 0px 38px;
-}
-
-.nav-alt{
     margin: auto;
-    width: fit-content;
-    padding: 0;
+    width: 80vw
 }
 
 .logo h3{
-    padding: 13px 79px 13px 0px;
+    padding: 13px 125px 13px 0px;
     font-family: Montserrat, sans-serif;;
     font-size: 24px;
     font-weight: 700;
     color: #252B42;
+}
+
+.nav-section{
+    width: 100%;
 }
 
 .main-nav li{
@@ -33,11 +33,11 @@
     color: #737373;
 }
 
-#dropdown-nav{
+.dropdown-nav{
     font-size: 14px;
     font-weight: 500;
     color: #252B42;
-    gap: 10px;
+    margin-right: 5px;
 }
 
 .nav-right{
@@ -49,31 +49,25 @@
 }
 
 
-#profile{
+.profile{
     font-size: 14px;
     font-weight: 700;
     color: #23A6F0; 
-    padding: 15px;
-    gap: 5px;
-    
+    padding-right: 15px;
+    gap:5px   
 }
 
-#search{
-    padding: 15px;
+
+.nav-ul{
+    display: flex;
     gap: 5px;
+    margin: auto;
 }
 
-#cart{
-    padding: 15px;
-    gap: 5px;
+.nav-ul p{
     color: #23A6F0;
 }
 
-#heart{
-    padding: 15px;
-    gap: 5px;
-    color: #23A6F0;
-}
 
 /* MOBILE NAV */
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Description.css'
+import descrip from "/images/description2.jpg"
 
 const Description = () => {
   return (
@@ -22,7 +23,7 @@ const Description = () => {
           </div>
           <div className='description-img'>
             <img className='description-img1' src="images/description1.jpg" alt="" />
-            <img className='description-img2' src="images/description2.jpg" alt="" />
+            <img src={descrip} alt="" className='description-img2'/>
           </div>
         </section>
     </section>

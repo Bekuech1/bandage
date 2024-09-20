@@ -11,14 +11,12 @@ import Footer from '../components/footer/Footer'
 const Home = () => {
   return (
     <>
-    <Navbar navClass='nav-right'/>
     <Hero/>
     <BestSeller/>
     <BestServices/>
     <Featured/>
     <About/>
     <Cta/>
-    <Footer footerClass='footer-top'/>
     </>
   )
 }

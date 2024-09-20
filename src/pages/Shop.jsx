@@ -10,14 +10,11 @@ import Clients from '../components/clients/Clients'
 const Shop = () => {
   return (
     <>
-    <Navbar navClass='nav-right-alt' navMarginAuto='nav-alt' />
-    <Breadcrumbs/>
+    <Breadcrumbs isShop={true}/>
     <ShopProduct/>
     <Description />
     <ProductListing header='bestseller products'/>
     <Clients/>
-    <Footer footerClass='footer-top-alt'/>
-    
     </>
   )
 }

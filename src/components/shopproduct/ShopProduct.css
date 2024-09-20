@@ -8,6 +8,11 @@
     gap: 30px;
 }
 
+.carousel-img{
+    width: 506px;
+    height: 450px;
+}
+
 .carousel-img1{
     width: 24px;
     height: 44.47px;
@@ -32,6 +37,7 @@
 .carousel-indicator img{
     width: 100px;
     height: 75px;
+    cursor: pointer;
 }
 
 .shop-right{
