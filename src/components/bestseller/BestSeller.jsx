@@ -17,7 +17,7 @@ const BestSeller = () => {
             <ComponentHeading text="BESTSELLER PRODUCTS" subtext='Problems trying to resolve the conflict between' id='grey'/>
         </div>
         <section className='bestseller-row auto grid'>
-            <div className='gridFlex spaceBetween mobileAuto'>
+            <div className='gridFlex spaceBetween mobileAuto auto'>
                 {recentProducts1.map((item) => (
                     <BestSellerCard key={item.id} item={item} classes='bestsellercard' cardText='bestseller-cardtext'/>
                 ))}
