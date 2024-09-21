@@ -4,8 +4,8 @@ import './About.css'
 const About = () => {
   return (
     <section className='about auto'>
-        <div className='about-inner gridFlex spaceBetween auto'>
-            <section className='grid about1'>
+        <div className='about-inner gridFlex spaceBetween'>
+            <section className='grid about1 auto'>
                 <h3 className='capitalize h3Text noMargin blue justifyCenter'>What they say about us</h3>
                 <div className='about1-1 justifyCenter'>
                     <div className='about1-1-1 grid'>

@@ -6,7 +6,7 @@
 
 .about-inner{
     width: 1080px;
-    padding: 48px;  
+    margin: auto; 
 }
 
 .about1{
@@ -51,8 +51,6 @@
     
     .about-inner{
         width: fit-content;
-        padding: 48px;  
-        gap: 37px;
     }
     
     .about1{
