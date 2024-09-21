@@ -6,6 +6,9 @@ import profile from '/icons/profile.svg'
 import navcart from '/icons/cart.svg'
 import navheart from '/icons/heart.svg'
 import search from '/icons/search.svg'
+import mobilecart from '/icons/mobile-cart.svg'
+import mobilesearch from '/icons/mobile-search.svg'
+import mobilemenu from '/icons/mobile-menu.svg'
 
 
 
@@ -137,18 +140,12 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
                 <h3 className='noMargin blue capitalize mobile-logo'>bandage</h3>
             </div>
             <section className='flex mobile-nav1-2'>
-                <img  className='auto' src="icons/mobile-search.svg" alt="" />
-                <img  className='auto' src="icons/mobile-cart.svg" alt="" />
-                <img  className='auto' src="icons/mobile-menu.svg" alt="" />
+                <img  className='auto' src={mobilesearch} alt="" />
+                <img  className='auto' src={mobilecart} alt="" />
+                <img  className='auto' src={mobilemenu} alt="" />
             </section>
         </div>
         <section className='grid auto nav-lists'>
-            <ul className='grid nav-lists1 noMargin'>
-                <li className='grey'>home</li>
-                <li className='grey'>product</li>
-                <li className='grey'>pricing</li>
-                <li className='grey'>contact</li>
-            </ul>
             <ul className='grid nav-lists2 noMargin'>
                 <li className='blue'>home</li>
                 <li className='blue'>shop</li>
@@ -159,16 +156,16 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
             </ul>
             <ul className='grid nav-lists3'>
                 <li className='sky'>
-                    <img src="icons/profile.svg" alt="" className='auto'/> login/register
+                    <img src={profile} alt="" className='auto'/> login/register
                 </li>
                 <li className='sky'>
-                    <img src="icons/cart.svg" alt="" />
+                    <img src={navcart} alt="" />
                 </li>
                 <li className='sky'>
-                    <img src="icons/search.svg" alt="" />
+                    <img src={search} alt="" />
                 </li>
                 <li className='sky'>
-                    <img src="icons/heart.svg" alt="" />
+                    <img src={navheart} alt="" />
                 </li>
             </ul>
         </section>

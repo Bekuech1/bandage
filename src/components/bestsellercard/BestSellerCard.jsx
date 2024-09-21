@@ -6,7 +6,7 @@ const BestSellerCard = ({item, classes, cardText}) => {
   return (
     <Link to={`/shop/${item.id}`}>
         <section className={`grid ${classes}`}>
-            <img src={item.images} alt={item.title}/>
+            <img src={item.images} alt={item.title} className=''/>
             <div className={`${cardText} grid justifyCenter centerText`}>
                 <h5 className='capitalize h5Text noMargin blue'>{item.title}</h5>
                 <div className='capitalize noDeco pText noMargin grey'>{item.category}</div>

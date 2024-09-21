@@ -1,3 +1,7 @@
+.footer{
+    width: 100vw;
+}
+
 .footer-top{
     background-color: #FAFAFA;
 }
@@ -7,7 +11,7 @@
 }
 
 .footer-top1{
-    width: 1050px;
+    width: max-content;
     padding: 40px 0px 40px 0px;
     gap: 577.5px;
     align-items: center;
@@ -30,7 +34,7 @@
 }
 
 .footer-middle{
-    width: 1050px;
+    width: max-content;
     padding: 50px 0px;
     gap: 30px;
 }
@@ -82,10 +86,24 @@
 
 .trademark{
     background-color: #fafafa;
-    width: 100%;
+    width: 100vw;
 }
 
 .trademark-text{
-    width: 1050px;
+    width: 100vw;
     padding: 25px 0px;
+}
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+
+    
+    .footer-top1{
+        gap: 60px;
+    }
+    
+    .footer-top1 h3{
+        width: 236px;
+    }
 }

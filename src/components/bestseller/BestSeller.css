@@ -13,3 +13,24 @@
     gap: 30px;
     padding: 32px 24px;
 }
+
+
+
+/* MOBILE SCREEN */
+@media only screen and (max-width:867px) {
+    .bestseller{
+        padding: 80px 0px 80px 0px;
+        gap: 24px;
+    }
+    
+    .bestseller-text{
+        width: max-content;
+        gap: 10px;
+    }
+    
+    .bestseller-row{
+        width: 100%;
+        gap: 30px;
+        padding: 32px 0;
+    }
+}

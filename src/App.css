@@ -175,7 +175,7 @@ img{
 
 .greyBackground{
   background-color: #fafafa;
-  width: 100%;
+  width: 100vw;
 }
 
 .notVisible{
@@ -186,6 +186,13 @@ img{
   visibility: collapse;
 }
 
+.componentHead{
+  gap: 3px;
+}
+
+.noMobile{
+  display: visible;
+}
 
 
 
@@ -198,4 +205,13 @@ img{
   .gridFlex{
     display: grid;
   }
+
+  .componentHead{
+    width: 215px;
+  }
+
+  .noMobile{
+    display: none;
+  }
+  
 }

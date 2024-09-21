@@ -40,3 +40,45 @@
     height: 426px;
     gap: 20px;
 }
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+    .about{
+        width: 100vw;
+        left: 117px;
+        padding: 80px 0px 80px 0px;    
+    }
+    
+    .about-inner{
+        width: fit-content;
+        padding: 48px;  
+        gap: 37px;
+    }
+    
+    .about1{
+        width: 351px;
+    }
+    
+    .about1-1{
+        width: 351px;
+    }
+    
+    .about1-1-1{
+        width: fit-content;
+    }
+    
+    .about2{
+        width: 364px;
+        height: 334.19px;
+        gap: 15.69px;
+    }
+
+    .group-img{
+        width: 112px;
+        height: 112px; 
+    }
+
+    .mobileAuto{
+        margin: auto;
+    }
+}

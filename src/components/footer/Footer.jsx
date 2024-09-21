@@ -6,9 +6,9 @@ import twitter from '/icons/twitter.svg'
 
 const Footer = ( {footerClass} ) => {
   return (
-    <footer>
+    <footer className='footer'>
         <div className={footerClass}>
-            <section className='footer-top1 auto gridFlex'>
+            <section className='footer-top1 auto flex'>
                 <h3 className='noMargin h3Text blue'>Bandage</h3>
                 <div className='top-links flex'>
                     <a href=""><img src={facebook} alt="" /></a>

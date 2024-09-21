@@ -1,8 +1,23 @@
 .hero-section{
     padding: 80px 0px;
     width: 1146px;
+    gap: 15px;
 }
 
 .hero-section .grid{
     gap: 15px;
+}
+
+.hero-section2{
+    gap: 15px;
+}
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+    .hero-section{
+        padding: 80px 0px;
+        width: 100vw;
+        gap: 15px;
+    }
 }

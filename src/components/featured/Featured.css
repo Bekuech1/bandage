@@ -1,7 +1,7 @@
 .featured{
-    width: 1050px;
+    width: max-content;
     padding: 112px 0px;
-    gap: 80px    
+    gap: 80px  ;  
 }
 
 .featured-text{
@@ -69,4 +69,28 @@
     border-radius: 3px;
     height: 24px;
     color: #ffffff;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+    .featured{
+        width: max-content;
+    }
+    
+    .featured-text{
+        width: max-content;
+    } 
+    
+    .featured-card{
+        width: 328px;
+    }
+    
+    .featured-main-img{
+        width: 328px;
+    }
+    
+    
+    .featured-grid-3{
+        width: 270px;
+    }
 }

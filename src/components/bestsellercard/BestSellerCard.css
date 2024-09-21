@@ -49,3 +49,15 @@
     text-decoration: none;
     text-align: left;
 }
+
+
+
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+    .bestsellercard img{
+        width: 295px;
+        height: 360px;   
+    }
+}

@@ -4,8 +4,8 @@ import './About.css'
 const About = () => {
   return (
     <section className='about auto'>
-        <div className='about-inner gridFlex spaceBetween'>
-            <section className='grid about1 '>
+        <div className='about-inner gridFlex spaceBetween auto'>
+            <section className='grid about1'>
                 <h3 className='capitalize h3Text noMargin blue justifyCenter'>What they say about us</h3>
                 <div className='about1-1 justifyCenter'>
                     <div className='about1-1-1 grid'>
@@ -27,19 +27,19 @@ const About = () => {
             </section>
             <section className='grid about2'>
                 <div className='flex about2-1 spaceBetween'>
-                    <img src="images/about1.jpg" alt="" />
-                    <img src="images/about2.jpg" alt="" />
-                    <img src="images/about3.jpg" alt="" />
+                    <img src="images/about1.jpg" className='group-img' alt="" />
+                    <img src="images/about2.jpg" className='group-img' alt="" />
+                    <img src="images/about3.jpg" className='group-img' alt="" />
                 </div>
                 <div className='flex about2-1 spaceBetween'>
-                    <img src="images/about4.jpg" alt="" />
-                    <img src="images/about5.jpg" alt="" />
-                    <img src="images/about6.jpg" alt="" />
+                    <img src="images/about4.jpg" className='group-img' alt="" />
+                    <img src="images/about5.jpg" className='group-img' alt="" />
+                    <img src="images/about6.jpg" className='group-img' alt="" />
                 </div>
                 <div className='flex about2-1 spaceBetween'>
-                    <img src="images/about7.jpg" alt="" />
-                    <img src="images/about8.jpg" alt="" />
-                    <img src="images/about9.jpg" alt="" />
+                    <img src="images/about7.jpg" className='group-img' alt="" />
+                    <img src="images/about8.jpg" className='group-img' alt="" />
+                    <img src="images/about9.jpg" className='group-img' alt="" />
                 </div>
             </section>
 

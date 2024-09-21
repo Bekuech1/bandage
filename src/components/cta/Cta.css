@@ -1,10 +1,10 @@
 .cta{
-    width: 100%;
+    width: 100vw;
     background-image: url(cta.jpg);   
 }
 
 .cta-body{
-    width: 1050px;
+    width: max-content;
     padding: 160px 0px 112px 0px;
     gap: 36px;  
     background-color: transparent;  
@@ -20,4 +20,20 @@
 .cta-body p{
     width: 447px;
     justify-self: center;
+}
+
+
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+    .cta-body h2{
+        font-size: 40px;
+        width: 400px;
+    }
+    
+    .cta-body p{
+        width: 380px;
+        justify-self: center;
+    }
 }

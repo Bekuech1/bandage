@@ -12,17 +12,17 @@ const BestSeller = () => {
   const recentProducts2 = products.slice(6, 11);
 
   return (
-    <section className='grid bestseller auto'>
-        <div className='grid bestseller-text auto centerText' >
+    <section className='grid bestseller'>
+        <div className='grid bestseller-text auto centerText ' >
             <ComponentHeading text="BESTSELLER PRODUCTS" subtext='Problems trying to resolve the conflict between' id='grey'/>
         </div>
         <section className='bestseller-row auto grid'>
-            <div className='gridFlex spaceBetween'>
+            <div className='gridFlex spaceBetween mobileAuto'>
                 {recentProducts1.map((item) => (
                     <BestSellerCard key={item.id} item={item} classes='bestsellercard' cardText='bestseller-cardtext'/>
                 ))}
             </div>
-            <div className='gridFlex spaceBetween'>
+            <div className='gridFlex spaceBetween noMobile auto'>
                 {recentProducts2.map((item) => (
                     <BestSellerCard key={item.id} item={item} classes='bestsellercard' cardText='bestseller-cardtext'/>
                 ))}
