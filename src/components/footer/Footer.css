@@ -11,11 +11,11 @@
 }
 
 .footer-top1{
-    width: max-content;
+    width: 63%;
     padding: 40px 0px 40px 0px;
     gap: 577.5px;
     align-items: center;
-    border-bottom: 1px solid #E6E6E6
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .footer-top1 h3{
