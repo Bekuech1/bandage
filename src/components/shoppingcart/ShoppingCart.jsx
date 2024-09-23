@@ -51,7 +51,7 @@ const ShoppingCart = () => {
               <div className='order-summary5 grid'>
                 <button className='filledButton normalButton'>proceed to checkout</button>
                 <div className='order-summary-line'></div>
-                <section className='flex'>
+                <section className='flex noMobile'>
                   <img src="images/paystack.jpg" alt="" />
                   <img src="images/mastercard.jpg" alt="" />
                   <img src="images/visa.jpg" alt="" />
@@ -66,7 +66,7 @@ const ShoppingCart = () => {
 const MainCart = () => {
   return (
     <div className='cart-container grid'>
-      <div className='maincart spaceBetween flex'>
+      <div className='maincart spaceBetween flex auto'>
         <div className='maincart1 flex'>
           <img className='cart-img'src="images/cart-img.jpg" alt="" />
           <div className='maincart1-1 grid auto'>
@@ -91,9 +91,9 @@ const MainCart = () => {
         </div>
       </div>
       <div className='maincart3 grid'>
-          <h4 className='h4Text noMargin capitalize blue'>$3000</h4>
-          <h6 className='h6Text noMargin capitalize feint'>$3000 x 1 item</h6>
-        </div>
+        <h4 className='h4Text noMargin capitalize blue'>$3000</h4>
+        <h6 className='h6Text noMargin capitalize feint'>$3000 x 1 item</h6>
+      </div>
       <div className='remove-btn flex'>
         <img className='auto' src="icons/remove.svg" alt="" />
         <h6 className='sText uppercase noMargin sky'>remove</h6>
