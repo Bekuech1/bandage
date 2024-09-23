@@ -9,7 +9,7 @@ const ShoppingCart = () => {
               <div className='cart-heading fix'>
                 <h3 className='h3Text noMargin capitalize blue'>shopping cart</h3>
               </div>
-              <div className='cart-items grid fix'>
+              <div className='cart-items grid'>
                 <div className='cart-items-top flex fix'>
                   <h6 className='h6Text white noMargin capitalize'>item details</h6>
                   <div>

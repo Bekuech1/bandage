@@ -173,12 +173,12 @@
     
     #cart-item-top1{
         width: 70px;
-        margin-left: 190px;
+        margin-left: 140px;
     }
     
     #cart-item-top2{
         width: 45px;
-        margin-left: 130px; 
+        margin-left: 80px; 
     }
 
     .maincart{
@@ -214,5 +214,9 @@
         width: fit-content;
         height: fit-content;
         gap: 12px;    
+    }
+
+    .order-summary{
+        padding: 12px;
     }
 }

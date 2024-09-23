@@ -83,7 +83,7 @@ const ShopProduct = () => {
                     />
                 </div>
             </section>
-            <div className='shop-right grid fix'>
+            <div className='shop-right grid'>
                 <h4 className='noMargin h4Text capitalize blue'>{item.title}</h4>
                 <section className='star-row flex'>
                     <div className=''>

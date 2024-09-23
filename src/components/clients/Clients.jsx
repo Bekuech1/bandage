@@ -9,7 +9,7 @@ import brand5 from '/images/brands-5.svg'
 const Clients = () => {
   return (
     <div className='greyBackground'>
-          <section className="shop-logos gridFlex auto fix">
+          <section className="shop-logos gridFlex auto">
         <div>
             <img src={brand1} alt="" />
         </div>
