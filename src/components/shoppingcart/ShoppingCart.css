@@ -173,7 +173,7 @@
     
     #cart-item-top1{
         width: 70px;
-        margin-left: 140px;
+        margin-left: 70px;
     }
     
     #cart-item-top2{
@@ -182,9 +182,8 @@
     }
 
     .maincart{
-        width: 412px;
-        height: fit-content;
-        border: 1px solid red   
+        width: 380px;
+        height: fit-content;   
     }
     
     .cart-container{
@@ -217,6 +216,6 @@
     }
 
     .order-summary{
-        padding: 12px;
+        padding: 10px;
     }
 }

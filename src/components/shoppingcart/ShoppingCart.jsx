@@ -4,13 +4,13 @@ import './ShoppingCart.css'
 const ShoppingCart = () => {
   return (
     <div className='greyBackground fix'>
-        <div className='shopping-cart auto gridFlex fix'>
+        <div className='shopping-cart auto gridFlex'>
             <section className='cart grid'>
-              <div className='cart-heading fix'>
+              <div className='cart-heading '>
                 <h3 className='h3Text noMargin capitalize blue'>shopping cart</h3>
               </div>
               <div className='cart-items grid'>
-                <div className='cart-items-top flex fix'>
+                <div className='cart-items-top flex noMobile'>
                   <h6 className='h6Text white noMargin capitalize'>item details</h6>
                   <div>
                       <h6 className='h6Text white noMargin capitalize' id='cart-item-top1'>quantity</h6>
@@ -65,7 +65,7 @@ const ShoppingCart = () => {
 
 const MainCart = () => {
   return (
-    <div className='cart-container grid fix'>
+    <div className='cart-container grid'>
       <div className='maincart spaceBetween flex'>
         <div className='maincart1 flex'>
           <img className='cart-img'src="images/cart-img.jpg" alt="" />
@@ -89,11 +89,11 @@ const MainCart = () => {
           <div className='auto'>1</div>
           <button className='cart-button2 auto'>+</button>
         </div>
-        <div className='maincart3 grid'>
+      </div>
+      <div className='maincart3 grid'>
           <h4 className='h4Text noMargin capitalize blue'>$3000</h4>
           <h6 className='h6Text noMargin capitalize feint'>$3000 x 1 item</h6>
         </div>
-      </div>
       <div className='remove-btn flex'>
         <img className='auto' src="icons/remove.svg" alt="" />
         <h6 className='sText uppercase noMargin sky'>remove</h6>
