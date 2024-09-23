@@ -113,13 +113,13 @@
     }
 
     .carousel-img1{
-        top: 200px;
-        left: 25px;
+        top: 90px;
+        left: 15px;
     }
 
     .carousel-img2{
-        top: 200px;
-        left: 385px;
+        top: 90px;
+        left: 370px;
     }
 
     #shop-product-txt{
@@ -128,7 +128,7 @@
 
     
     .line{
-        width: 380px;
+        width: 370px;
         height: 0px;
         border: 1px solid #bdbdbd;
     }
