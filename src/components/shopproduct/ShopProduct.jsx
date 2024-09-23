@@ -60,7 +60,7 @@ const ShopProduct = () => {
     <div className='greyBackground'>
         <div className='auto shopproduct gridFlex'>
             <section className='shop-left relative grid '>
-                <img src={item.images} className='carousel-img fix' alt="" />
+                <img src={item.images} className='carousel-img auto' alt="" />
                 <img 
                     className='absolute carousel-img1'
                     src={left} 
@@ -83,7 +83,7 @@ const ShopProduct = () => {
                     />
                 </div>
             </section>
-            <div className='shop-right grid'>
+            <div className='shop-right grid fix'>
                 <h4 className='noMargin h4Text capitalize blue'>{item.title}</h4>
                 <section className='star-row flex'>
                     <div className=''>
