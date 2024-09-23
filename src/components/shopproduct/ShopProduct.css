@@ -106,4 +106,30 @@
 
 
 /* MOBILE VIEW */
-@media only screen and (max-width:867px) {}
+@media only screen and (max-width:867px) {
+    .carousel-img{
+        width: 356px;
+        height: 300px;
+    }
+
+    .carousel-img1{
+        top: 200px;
+        left: 25px;
+    }
+
+    .carousel-img2{
+        top: 200px;
+        left: 385px;
+    }
+
+    #shop-product-txt{
+        width: 370px;
+    }
+
+    
+    .line{
+        width: 380px;
+        height: 0px;
+        border: 1px solid #bdbdbd;
+    }
+}

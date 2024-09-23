@@ -6,8 +6,8 @@ import profile from '/icons/profile.svg'
 import navcart from '/icons/cart.svg'
 import navheart from '/icons/heart.svg'
 import search from '/icons/search.svg'
-import mobilecart from '/icons/mobile-cart.svg'
-import mobilesearch from '/icons/mobile-search.svg'
+import mobilesearch from '/icons/mobile-cart.svg'
+import mobilecart from '/icons/mobile-search.svg'
 import mobilemenu from '/icons/mobile-menu.svg'
 
 

@@ -60,9 +60,9 @@ const ShopProduct = () => {
     <div className='greyBackground'>
         <div className='auto shopproduct gridFlex'>
             <section className='shop-left relative grid '>
-                <img src={item.images} className='carousel-img' alt="" />
+                <img src={item.images} className='carousel-img fix' alt="" />
                 <img 
-                    className='absolute carousel-img1' 
+                    className='absolute carousel-img1'
                     src={left} 
                     alt="" 
                     onClick={handlePrevious}
