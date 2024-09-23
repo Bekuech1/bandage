@@ -3,7 +3,7 @@ import './ShoppingCart.css'
 
 const ShoppingCart = () => {
   return (
-    <div className='greyBackground fix'>
+    <div className='greyBackground'>
         <div className='shopping-cart auto gridFlex'>
             <section className='cart grid'>
               <div className='cart-heading '>
