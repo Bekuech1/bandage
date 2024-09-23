@@ -56,7 +56,6 @@ const ShopProduct = () => {
       }
     };
 
-
   return (
     <div className='greyBackground'>
         <div className='auto shopproduct gridFlex'>
@@ -94,7 +93,7 @@ const ShopProduct = () => {
                 </section>
                 <h3 className='noMargin h3Text capitalize blue'>${item.price}</h3>
                 <p className='noMargin pText capitalize grey'>availability : <span className='sky'>{item.availabilityStatus}</span></p>
-                <p className='noMargin pText capitalize grey notVisible' id='shop-product-txt'>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.</p>
+                <p className='noMargin pText capitalize grey' id='shop-product-txt'>{item.description}</p>
                 <div className='line'></div>
                 <section className="shop-colors flex">
                     <div id="color1"></div>

@@ -1,15 +1,22 @@
 .breadcrumbs{
-    width: 100%;
+    width: 100vw;
     padding: 24px 0px;
     background-color: #fafafa;    
 }
 
 .breadcrumbs-inner{
-    width: 990px;
+    width: 90%;
 }
 
 .breadcrumbs-main{
-    width: 509px;
+    width: fit-content;
     align-items: center;
     gap: 15px;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width:867px) {
+    .breadcrumbs-main{
+        margin: auto;
+    }
 }

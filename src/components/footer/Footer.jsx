@@ -6,7 +6,7 @@ import twitter from '/icons/twitter.svg'
 
 const Footer = ( {footerClass} ) => {
   return (
-    <footer className='footer'>
+    <footer className='footer fix'>
             <section className='footer-top1 auto flex'>
                 <h3 className='noMargin h3Text blue'>Bandage</h3>
                 <div className='top-links flex'>

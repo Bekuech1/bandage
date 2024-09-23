@@ -3,14 +3,14 @@ import './ShoppingCart.css'
 
 const ShoppingCart = () => {
   return (
-    <div className='greyBackground'>
-        <div className='shopping-cart auto gridFlex'>
+    <div className='greyBackground fix'>
+        <div className='shopping-cart auto gridFlex fix'>
             <section className='cart grid'>
-              <div className='cart-heading'>
+              <div className='cart-heading fix'>
                 <h3 className='h3Text noMargin capitalize blue'>shopping cart</h3>
               </div>
-              <div className='cart-items grid'>
-                <div className='cart-items-top flex'>
+              <div className='cart-items grid fix'>
+                <div className='cart-items-top flex fix'>
                   <h6 className='h6Text white noMargin capitalize'>item details</h6>
                   <div>
                       <h6 className='h6Text white noMargin capitalize' id='cart-item-top1'>quantity</h6>
@@ -65,7 +65,7 @@ const ShoppingCart = () => {
 
 const MainCart = () => {
   return (
-    <div className='cart-container grid'>
+    <div className='cart-container grid fix'>
       <div className='maincart spaceBetween flex'>
         <div className='maincart1 flex'>
           <img className='cart-img'src="images/cart-img.jpg" alt="" />

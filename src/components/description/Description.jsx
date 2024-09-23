@@ -4,7 +4,7 @@ import descrip from "/images/description2.jpg"
 
 const Description = () => {
   return (
-    <section className='description'>
+    <section className='description noMobile'>
         <div className='description-top auto'>
             <li className='flex capitalize grey pText capitalize'>
                 <ul>description</ul>

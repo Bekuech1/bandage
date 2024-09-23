@@ -1,39 +1,14 @@
 .shop-logos{
-    width: 1050px;
+    width: 60%;
     padding: 50px 0px 50px 0px;
+    gap: 35px;
 }
 
-#logo-1{
+.shop-logos div{
     display: flex;
     justify-content: center;
     width: 153px;
     align-items: center;
+    margin: auto;
 }
 
-#logo-2{
-    display: flex;
-    justify-content: center;
-    width: 153px;
-    align-items: center;
-}
-
-#logo-3{
-    display: flex;
-    justify-content: center;
-    width: 153px;
-    align-items: center;
-}
-
-#logo-4{
-    display: flex;
-    justify-content: center;
-    width: 153px;
-    align-items: center;
-}
-
-#logo-5{
-    display: flex;
-    justify-content: center;
-    width: 153px;
-    align-items: center;
-}

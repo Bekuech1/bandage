@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import expand from '/icons/expand.svg'
 import profile from '/icons/profile.svg'
 import navcart from '/icons/cart.svg'
@@ -12,7 +12,12 @@ import mobilemenu from '/icons/mobile-menu.svg'
 
 
 
+
 const Navbar = ( { navClass, navMarginAuto } ) => {
+
+
+  const navigate = useNavigate();
+
   return (
     <>
     
@@ -140,9 +145,22 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
                 <h3 className='noMargin blue capitalize mobile-logo'>bandage</h3>
             </div>
             <section className='flex mobile-nav1-2'>
-                <img  className='auto' src={mobilesearch} alt="" />
-                <img  className='auto' src={mobilecart} alt="" />
-                <img  className='auto' src={mobilemenu} alt="" />
+                <img  
+                    className='auto' 
+                    src={mobilesearch} 
+                    alt="" 
+                />
+                <img  
+                    className='auto' 
+                    src={mobilecart} 
+                    alt="" 
+                    onClick={() => navigate("/cart")}
+                />
+                <img  
+                    className='auto' 
+                    src={mobilemenu} 
+                    alt="" 
+                />
             </section>
         </div>
         <section className='grid auto nav-lists'>
