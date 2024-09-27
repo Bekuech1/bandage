@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ShopProduct.css'
 import { useParams, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { addItemToCart } from '../CartSlice';
 import items from '../../products.json'
 import heart from '/icons/btn-heart.svg'
 import cart from '/icons/btn-cart.svg'
@@ -11,6 +13,14 @@ import fullstar  from '/icons/full-star.svg'
 import star from '/icons/star.svg'
 
 const ShopProduct = () => {
+    const dispatch = useDispatch();
+    const handleAddToCart = item => {
+        dispatch(addItemToCart(item));
+    };
+
+    const cartItems = useSelector(state => state.cart.cartItems);
+    
+
     const { id } = useParams();
     const navigate = useNavigate();
     const itemIndex = items.findIndex((item) => item.id === parseInt(id)); 
@@ -42,19 +52,19 @@ const ShopProduct = () => {
         }
     }
 
-    const [liked, setLiked] = useState(false);
+    // const [liked, setLiked] = useState(false);
 
-    const handleLike = () => {
-      if (!liked) {
-        setLiked(true);
-        incrementLikedProductsCount();
-        updateTotalLikedCount(1); 
-      } else {
-        setLiked(false);
-        decrementLikedProductsCount();
-        updateTotalLikedCount(-1);
-      }
-    };
+    // const handleLike = () => {
+    //   if (!liked) {
+    //     setLiked(true);
+    //     incrementLikedProductsCount();
+    //     updateTotalLikedCount(1); 
+    //   } else {
+    //     setLiked(false);
+    //     decrementLikedProductsCount();
+    //     updateTotalLikedCount(-1);
+    //   }
+    // };
 
   return (
     <div className='greyBackground'>
@@ -92,7 +102,7 @@ const ShopProduct = () => {
                     <p className='noMargin pText capitalize grey'>{item.reviews.length} reviews</p>
                 </section>
                 <h3 className='noMargin h3Text capitalize blue'>${item.price}</h3>
-                <p className='noMargin pText capitalize grey'>availability : <span className='sky'>{item.availabilityStatus}</span></p>
+                <p className='noMargin pText capitalize grey'>availability: <span className='sky'>{item.availabilityStatus}</span></p>
                 <p className='noMargin pText capitalize grey' id='shop-product-txt'>{item.description}</p>
                 <div className='line'></div>
                 <section className="shop-colors flex">
@@ -105,10 +115,15 @@ const ShopProduct = () => {
                     <button className='filledButton normalButton'>select options</button>
                     <button 
                         className='circleButton auto'
-                        onClick={handleLike}> 
+                    > 
                         <img src={heart} alt="" /> 
                     </button>
-                    <button className='circleButton auto'> <img src={cart} alt="" /> </button>
+                    <button 
+                        className='circleButton auto'
+                        onClick={ () => handleAddToCart(item) }
+                    > 
+                        <img src={cart} alt="" />
+                    </button>
                     <button className='circleButton auto'> <img src={eye} alt="" /> </button>
                 </section>
             </div>

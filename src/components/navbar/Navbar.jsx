@@ -1,6 +1,8 @@
 import React from 'react'
 import './Navbar.css'
+import { useState} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import expand from '/icons/expand.svg'
 import profile from '/icons/profile.svg'
 import navcart from '/icons/cart.svg'
@@ -15,8 +17,12 @@ import mobilemenu from '/icons/mobile-menu.svg'
 
 const Navbar = ( { navClass, navMarginAuto } ) => {
 
+  const [openMenu, setOpenMenu] = useState(false);
+
 
   const navigate = useNavigate();
+  const cartItems = useSelector(state => state.cart.cartItems);
+  const totalItemsInCart = cartItems.length;
 
   return (
     <>
@@ -50,7 +56,7 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
                     <ul className='capitalize'>
                         <NavLink 
                             className='noDeco' 
-                            to="/"
+                            to=""
                     >
                         about
                     </NavLink>
@@ -117,7 +123,7 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
                             src={navcart} 
                             alt="" 
                         />
-                        <p>1</p>
+                        <p>{totalItemsInCart}</p>
                         </NavLink>
                     </ul>
                     <ul className='flex'>
@@ -145,39 +151,73 @@ const Navbar = ( { navClass, navMarginAuto } ) => {
                 <h3 className='noMargin blue capitalize mobile-logo'>bandage</h3>
             </div>
             <section className='flex mobile-nav1-2'>
-                <img  
+                { !openMenu &&  (
+                    <><img  
                     className='auto' 
                     src={mobilesearch} 
                     alt="" 
                 />
+                <div className='flex'>
                 <img  
                     className='auto' 
                     src={mobilecart} 
                     alt="" 
                     onClick={() => navigate("/cart")}
-                />
+                /><p className='pText auto'>{totalItemsInCart > 0 && totalItemsInCart}</p>
+                </div>
+                </> )}
                 <img  
                     className='auto' 
                     src={mobilemenu} 
                     alt="" 
+                    onClick={() => setOpenMenu ((prev) => !prev)}
                 />
             </section>
         </div>
-        <section className='grid auto nav-lists'>
+        <section className={ openMenu ? 'grid auto nav-lists' : 'noMobile'}>
             <ul className='grid nav-lists2 noMargin'>
-                <li className='blue'>home</li>
-                <li className='blue'>shop</li>
-                <li className='blue'>about</li>
-                <li className='blue'>blog</li>
-                <li className='blue'>contact</li>
-                <li className='blue'>pages</li>
+                <li 
+                    className='blue'
+                    onClick={() => navigate("/")}
+                >
+                    home
+                </li>
+                <li 
+                    className='blue'
+                >
+                    shop
+                </li>
+                <li 
+                    className='blue'
+                >
+                    about
+                </li>
+                <li 
+                    className='blue'
+                >
+                    blog
+                </li>
+                <li 
+                    className='blue'
+                >
+                    contact
+                </li>
+                <li 
+                    className='blue'
+                >
+                    pages
+                </li>
             </ul>
             <ul className='grid nav-lists3'>
                 <li className='sky'>
                     <img src={profile} alt="" className='auto'/> login/register
                 </li>
-                <li className='sky'>
+                <li 
+                    className='sky'
+                    onClick={() => navigate("/cart")}
+                >
                     <img src={navcart} alt="" />
+                    {totalItemsInCart}
                 </li>
                 <li className='sky'>
                     <img src={search} alt="" />

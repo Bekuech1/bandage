@@ -5,6 +5,7 @@ import products from '../../products.json'
 
 const ProductListing = (prop) => {
 
+
     const moreProducts1 = products.slice(0, 4);
     const moreProducts2 = products.slice(5, 9);
   return (

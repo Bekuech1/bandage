@@ -89,7 +89,7 @@
 
 .maincart{
     width: 566px;
-    height: fit-content    
+    height: fit-content;
 }
 
 .cart-container{
@@ -102,6 +102,15 @@
     width: fit-content;
     height: fit-content;
     gap: 6px;    
+}
+
+.maincart1-1 img{
+    height: 18px;
+    margin: auto;
+}
+
+.maincart1-1 p{
+    margin: auto 0;
 }
 
 .cart-img{
@@ -118,7 +127,7 @@
 .maincart2{
     width: fit-content;
     height: fit-content;
-    gap: 16px;    
+    gap: 16px;  
 }
 
 .cart-button1{
